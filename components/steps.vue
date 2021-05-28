@@ -2,8 +2,6 @@
   <div class="steps">
     <div class="container">
       <div class="step">
-        <div class="border"></div>
-        <div class="fill"></div>
         <div class="step-img-wrap">
           <img src="/img/Households.svg" />
         </div>
@@ -23,8 +21,25 @@
         </div>
       </div>
       <div class="step">
-        <div class="border"></div>
-        <div class="fill"></div>
+        <div class="step-img-wrap">
+          <img src="/img/Households.svg" />
+        </div>
+        <div class="step-details">
+          <span class="step-no">Step 2</span>
+          <h2>Create Your Segments</h2>
+          <p>
+            Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
+            Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary classic
+            carefully curated hub Baggu concierge.
+          </p>
+          <p>
+            First-class Boeing 787 lovely smart, Fast Lane Ettinger exclusive K-pop soft power sophisticated charming
+            craftsmanship Washlet punctual business class. Global Sunspel emerging pintxos business class discerning,
+            cosy premium hand-crafted Ginza destination exquisite Singapore. Sharp Comme des Garçons Tsutaya espresso.
+          </p>
+        </div>
+      </div>
+      <div class="step">
         <div class="step-img-wrap">
           <img src="/img/Households.svg" />
         </div>
@@ -57,13 +72,15 @@
   display: flex;
   padding: 20px 50px;
   box-sizing: border-box;
-  width: calc(100% - 5px);
+  width: 100%;
   gap: 10%;
   flex-direction: row-reverse;
   align-items: center;
   position: relative;
-  margin-bottom: 5px;
-  margin-left: 5px;
+}
+.step.step.no-fill {
+  padding: 10px 50px;
+  flex-direction: column;
 }
 .step:nth-of-type(2n) {
   margin-left: 0px;
@@ -75,31 +92,6 @@
 .step > * {
   z-index: 3;
   position: relative;
-}
-.step > .border {
-  background: linear-gradient(45deg, #048dfd, #ed0874);
-  width: calc(100% + 5px);
-  position: absolute;
-  height: calc(100% + 5px);
-  z-index: 1;
-  left: -5px;
-  top: 0;
-}
-.step:nth-of-type(2n) > .border {
-  left: 0px;
-  top: 0px;
-  background: linear-gradient(135deg, #048dfd, #ed0874);
-}
-.step:last-of-type > .border {
-  height: 100%;
-}
-.step > .fill {
-  background: white;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 .step-img-wrap {
   flex-basis: 45%;
@@ -116,5 +108,79 @@
 .step-details .step-no {
   color: #ed0874;
   font-weight: 600;
+}
+
+.step:before {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 9px;
+  height: 9px;
+  background: transparent;
+  content: '';
+  border-radius: 10px;
+  background: #ed0874;
+  box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
+  animation: spot 1000ms ease-in-out infinite;
+  z-index: 4;
+}
+.step:nth-of-type(2n):before {
+  position: absolute;
+  left: calc(50% + 20px);
+  top: 20px;
+  width: 9px;
+  height: 9px;
+  background: transparent;
+  content: '';
+  border-radius: 10px;
+  background: #ed0874;
+  box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
+  animation: spot 1000ms ease-in-out infinite;
+  z-index: 4;
+}
+.step:after {
+  position: absolute;
+  width: 25%;
+  height: calc(100% - 1px);
+  content: '';
+  left: 24px;
+  border: 1px dashed rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: none;
+}
+.step:nth-of-type(2n):after {
+  left: calc(25%);
+  width: calc(25% + 24px);
+  border-left: none;
+  border-right: 1px dashed rgba(0, 0, 0, 0.15);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.step:first-of-type:after {
+  border-top: 0;
+  border-top-left-radius: 0px;
+  top: 20px;
+  height: calc(100% - 20px);
+}
+.step:last-of-type:after {
+  border-bottom: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  top: 0px;
+  height: calc(100% - 19px);
+}
+@keyframes spot {
+  0% {
+    box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
+  }
+  50% {
+    box-shadow: 0px 0px 0px 0px rgba(237, 8, 116, 0.5);
+  }
+  100% {
+    box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
+  }
 }
 </style>
