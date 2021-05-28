@@ -3,5 +3,6 @@
     <Cliff />
     <Usp />
     <Cta />
+    <Steps />
   </div>
 </template>

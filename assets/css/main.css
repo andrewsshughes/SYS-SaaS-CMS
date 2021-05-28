@@ -47,6 +47,7 @@ h2 {
 }
 p {
     font-size: 14px;
+    line-height: 22px;
 }
 .btn-group {
     display: flex;

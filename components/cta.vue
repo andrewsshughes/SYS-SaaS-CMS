@@ -2,7 +2,7 @@
   <div class="cta">
     <div class="container">
       <div class="staff-image">
-        <img src="/img/staff-placeholder.jpg" />
+        <img src="/img/staff-placeholder.png" />
         <div class="details">
           <span class="name">Megan Bradshaw</span>
           <span class="jobrole">Client Servicing Manager</span>
@@ -32,9 +32,8 @@
 }
 .cta .staff-image {
   height: 250px;
-  background: red;
   position: relative;
-  width: 350px;
+  width: 400px;
 }
 .cta .staff-image img {
   position: absolute;
