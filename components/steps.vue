@@ -150,8 +150,8 @@
   border-right: none;
 }
 .step:nth-of-type(2n):after {
-  left: calc(25%);
-  width: calc(25% + 24px);
+  left: calc(25% + 24px);
+  width: calc(25%);
   border-left: none;
   border-right: 1px dashed rgba(0, 0, 0, 0.15);
   border-top-left-radius: 0px;
@@ -170,7 +170,7 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   top: 0px;
-  height: calc(100% - 19px);
+  height: 100%;
 }
 @keyframes spot {
   0% {
