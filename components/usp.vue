@@ -55,7 +55,6 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .usp {
   flex-basis: 33.33%;
