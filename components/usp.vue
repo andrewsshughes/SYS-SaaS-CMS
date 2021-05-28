@@ -45,7 +45,7 @@ export default {
 
 <style scoped>
 .usps {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 h2 {
   text-align: center;

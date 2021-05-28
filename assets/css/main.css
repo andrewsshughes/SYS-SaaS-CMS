@@ -70,6 +70,10 @@ p {
 .btn:last-of-type {
     margin-right: 0;
 }
+.btn.light {
+    background: white;
+    color: #048dfd;
+}
 .btn.secondary {
     padding: 2px 0;
     margin-right: 25px;
