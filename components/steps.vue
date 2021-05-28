@@ -78,16 +78,9 @@
   align-items: flex-start;
   position: relative;
 }
-.step.step.no-fill {
-  padding: 10px 50px;
-  flex-direction: column;
-}
 .step:nth-of-type(2n) {
   margin-left: 0px;
   flex-direction: row;
-}
-.step:last-of-type {
-  margin-bottom: 100px;
 }
 .step > * {
   z-index: 3;

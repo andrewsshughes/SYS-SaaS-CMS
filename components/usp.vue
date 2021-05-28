@@ -50,6 +50,7 @@ export default {
 h2 {
   text-align: center;
   margin-bottom: 25px;
+  color: #048dfd;
 }
 .usp-row {
   display: flex;
@@ -94,7 +95,7 @@ h2 {
 .usp h3 {
   width: 75%;
   text-align: center;
-  color: #048dfd;
+  color: #ed0874;
 }
 .usp p {
   width: 80%;

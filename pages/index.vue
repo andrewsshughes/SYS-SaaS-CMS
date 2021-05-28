@@ -4,5 +4,6 @@
     <Usp />
     <Cta />
     <Steps />
+    <Outputdocs />
   </div>
 </template>
