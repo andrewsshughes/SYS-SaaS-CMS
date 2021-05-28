@@ -73,14 +73,14 @@ h2 {
   left: 0;
   top: 0;
   width: 100%;
-  opacity: 50%;
+  opacity: 0.5;
 }
 .usp .icon-wrap .blob.bottom {
   transform: rotate(115deg) scale(1.1);
 }
 .usp .icon-wrap .blob.top {
   transform: rotate(45deg) scale(1.1);
-  opacity: 75%;
+  opacity: 0.75;
 }
 .usp .icon-wrap i {
   position: absolute;
