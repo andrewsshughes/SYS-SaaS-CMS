@@ -101,6 +101,7 @@
 }
 .step-details {
   flex-basis: 45%;
+  padding-top: 21px;
 }
 .step-details h2 {
   color: #048dfd;
