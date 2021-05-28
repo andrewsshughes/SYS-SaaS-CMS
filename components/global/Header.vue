@@ -43,7 +43,7 @@ header .logo {
 }
 header .logo img {
   height: 50px;
-  filter: brightness(100);
+  filter: brightness(255);
 }
 nav {
   display: flex;

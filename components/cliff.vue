@@ -12,8 +12,8 @@
           rutrum congue. Proin vel congue odio.
         </p>
         <div class="btn-group">
-          <div class="btn secondary">Button 2</div>
-          <div class="btn">Button 1</div>
+          <div class="btn secondary"><i class="las la-download"></i> Download Brochure</div>
+          <div class="btn">Get in touch</div>
         </div>
       </div>
     </div>
