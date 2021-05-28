@@ -96,7 +96,7 @@
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
   border: 1px solid #f2f2f2;
-  max-width: 50%;
+  max-width: 55%;
   object-fit: contain;
 }
 </style>
