@@ -75,7 +75,7 @@
   width: 100%;
   gap: 10%;
   flex-direction: row-reverse;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
 }
 .step.step.no-fill {
@@ -137,8 +137,10 @@
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   border-right: none;
+  top: 0;
 }
 .step:nth-of-type(2n):after {
+  top: 0;
   left: calc(25% + 24px);
   width: calc(25%);
   border-left: none;
