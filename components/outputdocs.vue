@@ -46,7 +46,7 @@
   border: 1px dashed rgba(0, 0, 0, 0.15);
   text-align: center;
   padding: 25px;
-  width: 80%;
+  width: calc(90%);
   margin-left: auto;
   margin-right: auto;
 }
