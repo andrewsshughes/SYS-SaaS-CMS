@@ -113,7 +113,7 @@
 .step:before {
   position: absolute;
   left: 20px;
-  top: 20px;
+  top: 46px;
   width: 9px;
   height: 9px;
   background: transparent;
@@ -125,18 +125,7 @@
   z-index: 4;
 }
 .step:nth-of-type(2n):before {
-  position: absolute;
   left: calc(50% + 20px);
-  top: 20px;
-  width: 9px;
-  height: 9px;
-  background: transparent;
-  content: '';
-  border-radius: 10px;
-  background: #ed0874;
-  box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
-  animation: spot 1000ms ease-in-out infinite;
-  z-index: 4;
 }
 .step:after {
   position: absolute;
