@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/CeraPro-Bold.woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/CeraPro-Medium.woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/CeraPro-Regular.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('/fonts/CeraPro-Light.woff');
+    font-weight: 100;
+}
+* {
+    font-family: 'Cera Pro';
+}
+body {
+    padding: 0;
+    margin: 0;
+    color: #242424;
+}
+.container {
+    width: calc(100% - 100px);
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 30px;
+}
+p {
+    font-size: 14px;
+}
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn {
+    margin-right: 10px;
+    font-size: 14px;
+    background: linear-gradient(90deg, #048dfd, #0481e7);
+    padding: 20px 40px;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
+    cursor: pointer;
+    position: relative;
+    transition: 150ms ease-in-out;
+}
+.btn:hover {
+    transform: scale(1.05);
+}
+.btn:last-of-type {
+    margin-right: 0;
+}
+.btn.secondary {
+    padding: 2px 0;
+    margin-right: 25px;
+    background: transparent;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+}
+.btn.secondary:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: calc(100% - 1px);
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+.btn.secondary:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    top: calc(100% - 1px);
+    left: -300%;
+    transition: 300ms ease-in-out;
+}
+.btn.secondary:hover:after {
+    left: 0%;
+}
+.btn.secondary:hover:before {
+    left: 150%;
+}

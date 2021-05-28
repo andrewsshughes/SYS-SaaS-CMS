@@ -1,65 +1,108 @@
 <template>
-  <nav class="scrim-bg fixed z-40 top-0 inset-x-0 pt-3 px-3" aria-label="Main Menu">
-    <ul class="flex">
-      <li class="flex-1">
-        <nuxt-link class="btn block" to="/">Home</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/blog">Blog</nuxt-link>
-      </li>
-      <li class="flex-1 ml-2">
-        <nuxt-link class="btn block" to="/projects">Projects</nuxt-link>
-      </li>
-    </ul>
-  </nav>
+  <div class="header">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <img src="/img/PlusGroupLogo.svg" />
+        </div>
+        <nav>
+          <span>How it works</span>
+          <span>Pricing</span>
+          <span>FAQs</span>
+        </nav>
+        <div class="cta-wrap">
+          <div class="cta">
+            <i class="las la-download"></i>
+            <span>Download Brochure</span>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
 </template>
 
-<script>
-export default {
-  name: 'Header'
+<style scoped>
+.header {
+  position: absolute;
+  background: rgba(255, 255, 255, 0);
+  width: 100%;
+  height: 75px;
+  z-index: 5000;
 }
-</script>
-
-<style lang="postcss" scoped>
-.scrim-bg {
-  &::before {
-    content: '';
-    z-index: -1;
-    background-color: var(--bg);
-    @apply absolute bottom-0 inset-x-0 h-12 mb-4 transition-colors duration-200 ease-in-out;
-  }
-  &::after {
-    content: '';
-    z-index: -1;
-    opacity: 1;
-    animation: fadeIn1 500ms ease-in-out;
-    @apply pointer-events-none absolute bottom-0 inset-x-0 h-16 -mb-12;
-    background: linear-gradient(to bottom, #111827, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-  }
+header {
+  width: 100%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 25px;
+  height: 75px;
 }
-.nuxt-link-exact-active {
-  @apply text-gray-200 border-gray-400 bg-gray-800 bg-opacity-25 cursor-default;
+header .logo {
+  flex-basis: 33.33%;
 }
-
-.light-mode {
-  & .scrim-bg {
-    &::after {
-      animation-name: fadeIn2;
-      background: linear-gradient(to bottom, #e5e7eb, cubic-bezier(0.15, 0, 0.45, 1), transparent);
-    }
-  }
-  & .nuxt-link-exact-active {
-    @apply text-primary-700 border-gray-600 bg-gray-100;
-  }
+header .logo img {
+  height: 50px;
+  filter: brightness(10);
 }
-
-/* Need two because of smoother switching between color modes */
-@keyframes fadeIn1 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+nav {
+  display: flex;
+  color: white;
+  justify-content: center;
+  flex-basis: 33.33%;
 }
-@keyframes fadeIn2 {
-  from { opacity: 0; }
-  to { opacity: 1; }
+nav span {
+  margin-right: 50px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+nav span:before {
+  height: 1px;
+  width: 0;
+  left: 50%;
+  content: '';
+  background: white;
+  position: absolute;
+  bottom: -2px;
+  transition: 150ms ease-in;
+}
+nav span:hover:before {
+  width: 100%;
+  left: 0%;
+}
+.cta-wrap {
+  flex-basis: 33.33%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 40px;
+  transition: 150ms ease-out;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 20px;
+}
+.cta:hover {
+  max-width: 197px;
+  background: rgba(255, 255, 255, 1);
+  color: #242424;
+}
+.cta span {
+  display: block;
+  margin-left: 10px;
+  width: 147px;
+  min-width: 147px;
+}
+i {
+  font-size: 20px;
 }
 </style>
