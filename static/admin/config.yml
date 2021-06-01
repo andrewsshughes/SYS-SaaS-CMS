@@ -111,7 +111,8 @@ collections:
                 fields:
                   - {label: 'Product Name', name: 'name', widget: 'string'}
                   - {label: 'Product Price', name: 'price', widget: 'number', type: 'float'}
-                  - {label: 'product Description', name: 'desc', widget: 'markdown'}
+                  - {label: 'Product Description', name: 'desc', widget: 'markdown'}
+                  - {label: 'Product Image', name: 'image', widget: 'image'}
                   - label: 'Pricing Type'
                     name: 'type'
                     widget: 'select'
