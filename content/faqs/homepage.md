@@ -42,7 +42,12 @@ faq:
         hand to help you with your day-to-day communications. All you have to do
         is get in touch!
     - question: Can you talk to clients on my behalf?
-      answer: >+
+      answer: >
         Yes, no problem! We pride ourselves on being friendly and approachable,
         an extension of your team that your clients can get to know.
+    - question: What happens to my clients data?
+      answer: It stays on your device. The app has been developed to use storage
+        within your browser to ensure that there's minimal chance of your
+        clients data ending up somewhere it shouldn't be. The stored data is
+        also encrypted (AES-256) just for more piece of mind.
 ---
