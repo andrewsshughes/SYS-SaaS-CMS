@@ -12,8 +12,8 @@
         </nav>
         <div class="cta-wrap">
           <div class="cta">
-            <i class="las la-download"></i>
-            <span>Download Brochure</span>
+            <i class="las la-phone"></i>
+            <span>Request a call</span>
           </div>
         </div>
       </header>
@@ -94,7 +94,7 @@ nav a:hover:before {
   border-radius: 20px;
 }
 .cta:hover {
-  max-width: 197px;
+  max-width: 165px;
   background: rgba(255, 255, 255, 1);
   color: #242424;
 }

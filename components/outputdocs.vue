@@ -78,6 +78,7 @@ h4 {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 .doc {
   display: flex;
