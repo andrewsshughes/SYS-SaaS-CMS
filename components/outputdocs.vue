@@ -99,6 +99,8 @@ h4 {
 }
 .doc-img-wrap img {
   width: 100%;
+  box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
+  border-radius: 4px;
 }
 .doc-details {
   flex-basis: 45%;
