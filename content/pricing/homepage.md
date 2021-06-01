@@ -33,7 +33,6 @@ price:
         lorem. Nunc finibus vehicula venenatis. Nulla convallis mauris id leo
         vehicula, eu egestas justo cursus.
 
-
         \r
 
         \r
@@ -50,17 +49,13 @@ price:
         Strategy, your client records must be accurate and up to date, whilst
         also reflecting the new strategy we have created.
 
-
         We will update each client record to contain:
 
-
         * Individual segmentation (AAA, AA or A)
-
 
         \r
 
         * Review months (Jan-Dec)
-
 
         * All communications (Investor Magazines, Birthday Cards,
         Christmas Cards, Tax Focus Cards etc)"
@@ -72,14 +67,12 @@ price:
         client records, it is important that you inform your clients of the
         ongoing service they can expect to receive from you.
 
-
         \r
 
         \r
 
         Upon completion of the Client Servicing Strategy, we will write
         out to your clients via iBusiness ensuring we track all correspondence.
-
 
         \r
 
