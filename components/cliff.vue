@@ -1,5 +1,5 @@
 <template>
-  <div class="cliff">
+  <div class="cliff" :class="{ small: small == true }">
     <div class="cliff-fill-wrap">
       <div class="cliff-fill"></div>
     </div>
@@ -8,13 +8,13 @@
       <div class="content">
         <h1>{{ cliff.title }}</h1>
         <p>{{ cliff.desc }}</p>
-        <div class="btn-group">
+        <div class="btn-group" v-if="small != true">
           <div class="btn secondary"><i class="las la-download"></i> Download Brochure</div>
           <div class="btn">Get in touch</div>
         </div>
       </div>
     </div>
-    <div class="preview-wrap">
+    <div class="preview-wrap" v-if="small != true">
       <img src="/img/client-list-screen.png" />
     </div>
   </div>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  props: ['cliff'],
+  props: ['cliff', 'small'],
 }
 </script>
 
@@ -35,6 +35,9 @@ export default {
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 250px;
+}
+.cliff.small {
+  height: 500px;
 }
 .cliff-fill-wrap {
   overflow: hidden;

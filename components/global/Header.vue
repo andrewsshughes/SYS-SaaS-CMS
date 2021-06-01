@@ -6,9 +6,9 @@
           <img src="/img/PlusGroupLogo.svg" />
         </div>
         <nav>
-          <span>How it works</span>
-          <span>Pricing</span>
-          <span>FAQs</span>
+          <router-link to="/">How it works</router-link>
+          <router-link to="/pricing">Pricing</router-link>
+          <router-link to="/faqs">FAQs</router-link>
         </nav>
         <div class="cta-wrap">
           <div class="cta">
@@ -51,13 +51,15 @@ nav {
   justify-content: center;
   flex-basis: 33.33%;
 }
-nav span {
+nav a {
   margin-right: 50px;
   cursor: pointer;
   text-align: center;
   position: relative;
+  text-decoration: none;
+  color: white;
 }
-nav span:before {
+nav a:before {
   height: 1px;
   width: 0;
   left: 50%;
@@ -67,7 +69,7 @@ nav span:before {
   bottom: -2px;
   transition: 150ms ease-in;
 }
-nav span:hover:before {
+nav a:hover:before {
   width: 100%;
   left: 0%;
 }
