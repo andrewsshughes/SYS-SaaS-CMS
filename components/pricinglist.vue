@@ -5,6 +5,9 @@
       <p>{{ price.desc }}</p>
       <div class="price-list">
         <div class="card" v-for="(price, index) in price.prices" :key="index">
+          <div class="img-wrap">
+            <img :src="price.image" />
+          </div>
           <div class="contents">
             <div class="name-wrap">
               <h3>{{ price.name }}</h3>
@@ -12,15 +15,15 @@
             <div class="price">
               <span class="value">£{{ price.price.toFixed(2) }}</span>
               <span v-if="price.type != 'Fixed Price'" class="freq">{{ price.type }}</span>
+              <p v-for="(chunk, index) in formatDesc(price.desc, false)" :key="index">
+                {{ chunk }}
+              </p>
+              <ul v-if="formatDesc(price.desc, true).length > 0">
+                <li v-for="(item, index) in formatDesc(price.desc, true)" :key="index">
+                  {{ item.substr(2, item.length - 2) }}
+                </li>
+              </ul>
             </div>
-            <p v-for="(chunk, index) in formatDesc(price.desc, false)" :key="index">
-              {{ chunk }}
-            </p>
-            <ul v-if="formatDesc(price.desc, true).length > 0">
-              <li v-for="(item, index) in formatDesc(price.desc, true)" :key="index">
-                {{ item.substr(2, item.length - 2) }}
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -45,9 +48,9 @@ export default {
       })
 
       if (list != true) {
-        return paragraphs
+        return paragraphs.filter((i) => i.trim().length > 0)
       } else {
-        return listItems
+        return listItems.filter((i) => i.trim().length > 0)
       }
     },
   },
@@ -97,6 +100,12 @@ export default {
   display: flex;
   justify-content: flex-start;
 }
+.card .img-wrap {
+  flex-basis: 40%;
+}
+.card .img-wrap img {
+  width: 100%;
+}
 .card .name-wrap h3 {
   font-size: 20px;
 }
@@ -116,10 +125,15 @@ export default {
 }
 .card p,
 .card li {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
   text-align: left;
   color: #242424;
+  margin-bottom: 0;
 }
 .card ul {
   padding-left: 20px;
+  margin-top: 0px;
 }
 </style>
