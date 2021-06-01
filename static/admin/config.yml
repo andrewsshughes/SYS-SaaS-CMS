@@ -112,4 +112,4 @@ collections:
               - label: 'Ongoing Product'
                 name: 'ongoing'
                 widget: 'boolean'
-                required: 'false'
+                required: false
