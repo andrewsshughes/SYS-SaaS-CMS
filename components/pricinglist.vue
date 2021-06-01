@@ -104,6 +104,7 @@ export default {
   flex-basis: 45%;
   position: relative;
   box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
+  min-height: 300px;
 }
 .card .img-wrap img {
   width: 100%;
