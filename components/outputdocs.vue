@@ -6,23 +6,9 @@
         <h2>Download Your Documents</h2>
         <p>Once you have completed steps 1 to 4, the system produces 4 key sets of documentation, these include:</p>
         <div class="document-list">
-          <div class="doc">
+          <div class="doc" v-for="(doc, index) in docs" :key="index">
             <div class="doc-img-wrap">
-              <img src="/img/Households.svg" />
-            </div>
-            <div class="doc-details">
-              <span class="doc-sub">The Documents</span>
-              <h2>Segmentation & Service Offering</h2>
-              <p>
-                Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
-                Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary
-                classic carefully curated hub Baggu concierge.
-              </p>
-            </div>
-          </div>
-          <div class="doc">
-            <div class="doc-img-wrap">
-              <img src="/img/Households.svg" />
+              <img :src="doc.icon" />
             </div>
             <div class="doc-details">
               <span class="doc-sub">The Documents</span>
@@ -39,6 +25,32 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['docs'],
+  methods: {
+    formatDesc(desc, list) {
+      let chunks = desc.split(/\s\s/g)
+      let listItems = []
+      let paragraphs = []
+      chunks.forEach((chunk, i) => {
+        if (chunk.substr(0, 1) == '*') {
+          listItems.push(chunk)
+        } else {
+          paragraphs.push(chunk)
+        }
+      })
+
+      if (list != true) {
+        return paragraphs
+      } else {
+        return listItems
+      }
+    },
+  },
+}
+</script>
 
 <style scoped>
 .output-docs {
