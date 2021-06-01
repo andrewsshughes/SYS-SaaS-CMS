@@ -45,8 +45,8 @@ h2 {
 }
 .usp .icon-wrap {
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 160px;
+  height: 160px;
   margin-bottom: 20px;
 }
 .usp .icon-wrap .blob {
@@ -81,7 +81,7 @@ h2 {
   position: absolute;
   left: 50%;
   top: 50%;
-  font-size: 50px;
+  font-size: 80px;
   transform: translate(-50%, -50%);
   color: white;
   padding-top: 3px;
