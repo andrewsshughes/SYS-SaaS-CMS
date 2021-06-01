@@ -32,4 +32,15 @@ steps:
 
       * Funds under management.
     icon: /img/Households.svg
+  - title: Review Your Households
+    desc: >-
+      Our system groups your clients by household and combines individual FUM,
+      to segment collectively. Here you can review your households and:
+
+      * Confirm/Amend Segmentation
+
+      * Determine who should be serviced individually
+
+      * Highlight any under 18's
+    icon: /img/Households.svg
 ---
