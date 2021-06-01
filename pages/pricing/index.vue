@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <Cliff :cliff="cliff" :small="true" />
-    <Pricinglist :prices="prices" />
+    <Pricinglist :price="price" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 
     return {
       cliff: pageContent[0].cliff,
-      prices: pageContent[0].prices,
+      price: pageContent[0].price,
     }
   },
 }
