@@ -49,6 +49,10 @@ p {
     font-size: 14px;
     line-height: 22px;
 }
+li {
+    font-size: 14px;
+    line-height: 22px;
+}
 .btn-group {
     display: flex;
     justify-content: center;

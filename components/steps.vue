@@ -1,66 +1,52 @@
 <template>
   <div class="steps">
     <div class="container">
-      <div class="step">
+      <div class="step" v-for="(step, index) in steps" :key="index">
         <div class="step-img-wrap">
-          <img src="/img/Households.svg" />
+          <img :src="step.icon" />
         </div>
         <div class="step-details">
-          <span class="step-no">Step 1</span>
-          <h2>Create Your Segments</h2>
-          <p>
-            Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
-            Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary classic
-            carefully curated hub Baggu concierge.
+          <span class="step-no">Step {{ index + 1 }}</span>
+          <h2>{{ step.title }}</h2>
+          <p v-for="(chunk, index) in formatDesc(step.desc, false)" :key="index">
+            {{ chunk }}
           </p>
-          <p>
-            First-class Boeing 787 lovely smart, Fast Lane Ettinger exclusive K-pop soft power sophisticated charming
-            craftsmanship Washlet punctual business class. Global Sunspel emerging pintxos business class discerning,
-            cosy premium hand-crafted Ginza destination exquisite Singapore. Sharp Comme des Garçons Tsutaya espresso.
-          </p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-img-wrap">
-          <img src="/img/Households.svg" />
-        </div>
-        <div class="step-details">
-          <span class="step-no">Step 2</span>
-          <h2>Create Your Segments</h2>
-          <p>
-            Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
-            Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary classic
-            carefully curated hub Baggu concierge.
-          </p>
-          <p>
-            First-class Boeing 787 lovely smart, Fast Lane Ettinger exclusive K-pop soft power sophisticated charming
-            craftsmanship Washlet punctual business class. Global Sunspel emerging pintxos business class discerning,
-            cosy premium hand-crafted Ginza destination exquisite Singapore. Sharp Comme des Garçons Tsutaya espresso.
-          </p>
-        </div>
-      </div>
-      <div class="step">
-        <div class="step-img-wrap">
-          <img src="/img/Households.svg" />
-        </div>
-        <div class="step-details">
-          <span class="step-no">Step 2</span>
-          <h2>Create Your Segments</h2>
-          <p>
-            Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
-            Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary classic
-            carefully curated hub Baggu concierge.
-          </p>
-          <p>
-            First-class Boeing 787 lovely smart, Fast Lane Ettinger exclusive K-pop soft power sophisticated charming
-            craftsmanship Washlet punctual business class. Global Sunspel emerging pintxos business class discerning,
-            cosy premium hand-crafted Ginza destination exquisite Singapore. Sharp Comme des Garçons Tsutaya espresso.
-          </p>
+          <ul v-if="formatDesc(step.desc, true).length > 0">
+            <li v-for="(item, index) in formatDesc(step.desc, true)" :key="index">
+              {{ item.substr(2, item.length - 2) }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['steps'],
+  methods: {
+    formatDesc(desc, list) {
+      let chunks = desc.split(/\s\s/g)
+      let listItems = []
+      let paragraphs = []
+      chunks.forEach((chunk, i) => {
+        if (chunk.substr(0, 1) == '*') {
+          listItems.push(chunk)
+        } else {
+          paragraphs.push(chunk)
+        }
+      })
+
+      if (list != true) {
+        return paragraphs
+      } else {
+        return listItems
+      }
+    },
+  },
+}
+</script>
 
 <style scoped>
 .steps {
@@ -98,6 +84,9 @@
 }
 .step-details h2 {
   color: #048dfd;
+}
+.step-details ul {
+  padding-left: 20px;
 }
 .step-details .step-no {
   color: #ed0874;

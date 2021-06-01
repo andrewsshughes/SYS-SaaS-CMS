@@ -3,7 +3,7 @@
     <Cliff :cliff="cliff" />
     <Usp :usps="usps" />
     <Cta />
-    <Steps />
+    <Steps :steps="steps" />
     <Outputdocs />
   </div>
 </template>
@@ -16,6 +16,7 @@ export default {
     return {
       cliff: pageContent[0].cliff,
       usps: pageContent[0].usps,
+      steps: pageContent[0].steps,
     }
   },
 }
