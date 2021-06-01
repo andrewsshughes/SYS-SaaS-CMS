@@ -18,7 +18,7 @@ usps:
 steps:
   - title: Create your Segments
     desc: >-
-      Use our pre-built A, AA & AAA segments or create yourown, to include:
+      Use our pre-built A, AA & AAA segments or create your own, to include:
 
 
       * Review frequency and dates
