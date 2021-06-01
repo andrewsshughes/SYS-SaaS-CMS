@@ -70,7 +70,7 @@ export default {
 .price-list {
   display: flex;
   gap: 5%;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 .price-list .card {
   flex-basis: 30%;
