@@ -38,6 +38,7 @@ export default {
 }
 .cliff.small {
   height: 500px;
+  margin-bottom: 100px;
 }
 .cliff-fill-wrap {
   overflow: hidden;

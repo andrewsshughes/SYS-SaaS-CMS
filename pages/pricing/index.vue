@@ -1,6 +1,7 @@
 <template>
   <div class="page-content">
     <Cliff :cliff="cliff" :small="true" />
+    <Pricinglist />
   </div>
 </template>
 

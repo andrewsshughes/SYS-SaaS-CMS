@@ -97,3 +97,19 @@ collections:
             fields: 
               - {label: 'Cliff Title', name: 'title', widget: 'string'}
               - {label: 'Cliff Content', name: 'desc', widget: 'text'}
+          - label: 'Price List'
+            name: 'prices'
+            widget: 'list'
+            summary: '{{fields.name}}'
+            fields:
+              - {label: 'Product Name', name: 'name', widget: 'string'}
+              - {label: 'Product Price', name: 'price', widget: 'number', type: 'float'}
+              - label: 'Pricing Type'
+                name: 'type'
+                widget: 'select'
+                options: ['Per Household', 'Per Client', 'Fixed Price']
+                default: 'Fixed Price'
+              - label: 'Ongoing Product'
+                name: 'ongoing'
+                widget: 'boolean'
+                required: 'false'
