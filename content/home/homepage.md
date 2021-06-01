@@ -68,4 +68,49 @@ steps:
 
       * Capability
     icon: /img/Households.svg
+docs:
+  - title: Segmentation & ServiceOffering
+    desc: >-
+      This one page document allows you to clearly show a top level summary of
+      your Servicing Strategy, including:
+
+
+      * Client Bank Evaluation
+
+
+      * Individual Segmentation & Communication Strategy
+    icon: /img/segments.png
+  - title: Individual Client Servicing Statements
+    desc: >-
+      This one page document summarises what client will receive on an annual
+      basis, including:
+
+
+      * Client Bank Evaluation
+
+
+      * Individual Segmentation & Communication Strategy
+    icon: /img/statement.png
+  - title: Proposed On-going Service Schedule Summary
+    desc: >
+      This one page document allows you to clearly show a top level summary of
+      your Servicing Strategy, including:
+
+
+      * Client Bank Evaluation
+
+
+      * Individual Segmentation & Communication Strategy
+    icon: /img/ongoing-service.png
+  - title: Highlighted Business Sale &Purchase Clients
+    desc: >-
+      This one page document allows you to clearly show a top level summary of
+      your Servicing Strategy, including:
+
+
+      * Client Bank Evaluation
+
+
+      * Individual Segmentation & Communication Strategy
+    icon: /img/adviser-breakdown.png
 ---
