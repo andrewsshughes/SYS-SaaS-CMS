@@ -41,6 +41,8 @@ h2 {
   margin-left: 20%;
   text-align: center;
   margin-bottom: 100px;
+  font-size: 20px;
+  line-height: 30px;
 }
 .usp-row {
   display: flex;
