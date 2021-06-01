@@ -117,7 +117,3 @@ collections:
                     widget: 'select'
                     options: ['Per Household', 'Fixed Price']
                     default: 'Fixed Price'
-                  - label: 'Ongoing Product'
-                    name: 'ongoing'
-                    widget: 'boolean'
-                    required: false
