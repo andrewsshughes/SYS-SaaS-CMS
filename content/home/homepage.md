@@ -31,7 +31,7 @@ steps:
 
 
       * Funds under management.
-    icon: /img/Households.svg
+    icon: /img/frame-12.png
   - title: Review Your Households
     desc: >-
       Our system groups your clients by household and combines individual FUM,
