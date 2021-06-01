@@ -60,7 +60,7 @@ export default {
   min-height: 50px;
   border: 1px dashed rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding: 25px;
+  padding: 50px 25px 25px 25px;
   width: calc(90%);
   margin-left: auto;
   margin-right: auto;
