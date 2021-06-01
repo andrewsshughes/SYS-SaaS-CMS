@@ -42,7 +42,7 @@ price:
         augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
         sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
         elementum mi. Etiam venenatis venenatis risus et feugiat."
-      image: /img/client-list-screen.png
+      image: /img/Client segmentation.png
     - type: Per Household
       name: iBusiness / SalesForce Update & Data Cleanse
       price: 3
