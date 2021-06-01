@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <Cliff :cliff="cliff" :small="true" />
-    <Pricinglist :price="price" />
+    <Faqs :faq="faq" />
     <Cta :flip="true" />
   </div>
 </template>
@@ -9,11 +9,11 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const pageContent = await $content('pricing').fetch()
+    const pageContent = await $content('faqs').fetch()
 
     return {
       cliff: pageContent[0].cliff,
-      price: pageContent[0].price,
+      faq: pageContent[0].faq,
     }
   },
 }

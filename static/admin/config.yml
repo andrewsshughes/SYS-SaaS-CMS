@@ -144,7 +144,7 @@ collections:
               - label: 'FAQs'
                 name: 'faqs'
                 widget: 'list'
-                summary: '{{fields.name}}'
+                summary: '{{fields.question}}'
                 fields:
                   - {label: 'Question', name: 'question', widget: 'string'}
                   - {label: 'Answer', name: 'answer', widget: 'markdown'}
