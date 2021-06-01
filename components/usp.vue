@@ -2,6 +2,10 @@
   <div class="usps">
     <div class="container">
       <h2>Exclusively for SJP Partners</h2>
+      <p>
+        Our team has been supporting the Partnership for more than 7 years, so our solution has been built with you in
+        mind.
+      </p>
       <div class="usp-row">
         <div v-for="(usp, index) in usps" :key="index" class="usp">
           <div class="icon-wrap">
@@ -29,8 +33,14 @@ export default {
 }
 h2 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   color: #048dfd;
+}
+.usps .container > p {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  margin-bottom: 50px;
 }
 .usp-row {
   display: flex;
