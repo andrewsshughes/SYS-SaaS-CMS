@@ -63,6 +63,20 @@ h2 {
   transform: rotate(45deg) scale(1.1);
   opacity: 0.75;
 }
+.usp:nth-of-type(2n) .icon-wrap .blob.bottom {
+  transform: rotate(105deg) scale(1.09);
+}
+.usp:nth-of-type(2n) .icon-wrap .blob.top {
+  transform: rotate(150deg) scale(1.12);
+  opacity: 0.75;
+}
+.usp:nth-of-type(3n) .icon-wrap .blob.bottom {
+  transform: rotate(181deg) scale(1.11);
+}
+.usp:nth-of-type(3n) .usp .icon-wrap .blob.top {
+  transform: rotate(-3deg) scale(1.14);
+  opacity: 0.75;
+}
 .usp .icon-wrap i {
   position: absolute;
   left: 50%;
