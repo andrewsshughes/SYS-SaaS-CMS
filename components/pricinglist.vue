@@ -101,10 +101,16 @@ export default {
   justify-content: flex-start;
 }
 .card .img-wrap {
-  flex-basis: 40%;
+  flex-basis: 45%;
+  position: relative;
+  box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
 }
 .card .img-wrap img {
   width: 100%;
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 .card .name-wrap h3 {
   font-size: 20px;
@@ -134,6 +140,7 @@ export default {
 }
 .card ul {
   padding-left: 20px;
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 </style>
