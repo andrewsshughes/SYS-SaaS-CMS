@@ -15,5 +15,21 @@ usps:
   - title: Highlight Vulnerable Clients
     desc: And develop appropriate servicing strategies to accommodate their needs
     icon: blind
-steps: []
+steps:
+  - title: Create your Segments
+    desc: >-
+      Use our pre-built A, AA & AAA segments or create your own, to include:
+
+
+      * Review frequency and dates
+
+
+      * Pre-set Communications such as Investor Magazines, Birthday & Christmas cards and Tax & Focus Cards
+
+
+      * Custom communications & events
+
+
+      * Funds under management.
+    icon: /img/Households.svg
 ---
