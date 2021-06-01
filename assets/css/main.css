@@ -72,6 +72,9 @@ li {
 .btn:hover {
     transform: scale(1.05);
 }
+.btn.heavy {
+    font-weight: 600;
+}
 .btn:last-of-type {
     margin-right: 0;
 }

@@ -11,7 +11,7 @@
       <div class="contents">
         <h2>Would you like a demonstration?</h2>
         <div class="btn-group">
-          <div class="btn light">Click here to book</div>
+          <div class="btn light heavy">Click here to book</div>
         </div>
       </div>
     </div>
