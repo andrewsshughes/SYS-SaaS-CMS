@@ -67,7 +67,7 @@ steps:
 
 
       * Capability
-    icon: /img/Households.svg
+    icon: /img/vulnerabilites.svg
 docs:
   - title: Segmentation & ServiceOffering
     desc: >-
