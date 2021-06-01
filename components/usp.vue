@@ -57,7 +57,7 @@ h2 {
   position: relative;
   width: 160px;
   height: 160px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .usp .icon-wrap .blob {
   position: absolute;
