@@ -117,3 +117,34 @@ collections:
                     widget: 'select'
                     options: ['Per Household', 'Fixed Price']
                     default: 'Fixed Price'
+  - label: 'FAQs'
+    name: 'faqs'
+    files:
+      - label: 'Content'
+        name: 'content'
+        file: 'content/faqs/homepage.md'
+        format: 'md'
+        editor:
+          preview: false
+        fields:
+          - label: 'Cliff Content'
+            name: 'cliff'
+            widget: 'object'
+            summary: '{{fields.title}}'
+            fields: 
+              - {label: 'Cliff Title', name: 'title', widget: 'string'}
+              - {label: 'Cliff Content', name: 'desc', widget: 'text'}
+          - label: 'FAQ Content'
+            name: 'faq'
+            widget: 'object'
+            summary: '{{fields.title}}'
+            fields: 
+              - {label: 'FAQ Title', name: 'title', widget: 'string'}
+              - {label: 'FAQ Content', name: 'desc', widget: 'text'}
+              - label: 'FAQs'
+                name: 'faqs'
+                widget: 'list'
+                summary: '{{fields.name}}'
+                fields:
+                  - {label: 'Question', name: 'question', widget: 'string'}
+                  - {label: 'Answer', name: 'answer', widget: 'markdown'}

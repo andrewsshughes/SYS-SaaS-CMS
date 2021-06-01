@@ -24,6 +24,24 @@ price:
     lorem ultricies, aliquet tortor eget, consequat leo. Curabitur malesuada
     nisl pulvinar mollis facilisis. Etiam dapibus a diam ut condimentum.
   prices:
+    - type: Fixed Price
+      name: Client Segmentation & Servicing Strategy
+      price: 997
+      desc: "Praesent tincidunt ligula vitae massa rhoncus, ac bibendum velit pretium.
+        Vestibulum ut magna scelerisque, pellentesque dolor vitae, pretium
+        augue. Suspendisse eu augue bibendum, eleifend nulla vitae, lobortis
+        lorem. Nunc finibus vehicula venenatis. Nulla convallis mauris id leo
+        vehicula, eu egestas justo cursus.
+
+
+        \r
+
+        \r
+
+        Nulla orci neque, molestie a velit vitae, vulputate molestie
+        augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
+        sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
+        elementum mi. Etiam venenatis venenatis risus et feugiat."
     - type: Per Household
       name: iBusiness / SalesForce Update & Data Cleanse
       price: 3
@@ -45,24 +63,6 @@ price:
 
         * All communications (Investor Magazines, Birthday Cards,
         Christmas Cards, Tax Focus Cards etc)"
-    - type: Fixed Price
-      name: Client Segmentation & Servicing Strategy
-      price: 997
-      desc: "Praesent tincidunt ligula vitae massa rhoncus, ac bibendum velit pretium.
-        Vestibulum ut magna scelerisque, pellentesque dolor vitae, pretium
-        augue. Suspendisse eu augue bibendum, eleifend nulla vitae, lobortis
-        lorem. Nunc finibus vehicula venenatis. Nulla convallis mauris id leo
-        vehicula, eu egestas justo cursus.
-
-
-        \r
-
-        \r
-
-        Nulla orci neque, molestie a velit vitae, vulputate molestie
-        augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
-        sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
-        elementum mi. Etiam venenatis venenatis risus et feugiat."
     - type: Per Household
       name: Client Service Disclosure
       price: 2
