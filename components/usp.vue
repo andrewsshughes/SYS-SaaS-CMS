@@ -40,7 +40,7 @@ h2 {
   width: 60%;
   margin-left: 20%;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 .usp-row {
   display: flex;
