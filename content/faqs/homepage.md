@@ -7,14 +7,42 @@ faq:
   desc: Below is everything you many need to know about PLUS Client Servicing. If
     the answer isn't there get feel free to get in touch
   faqs:
-    - question: Why you gotta play that song so loud?
-      answer: "Don't try to tell me what i already know\r
+    - question: Why should I use your service?
+      answer: "\r
 
-        Don't criticise me 'cause i'm running the show\r
+        Our experienced teams of dedicated professionals are ready and
+        waiting to help you by providing client servicing support. We can handle
+        your day-to-day obligations giving you more time to spend with your
+        clients and grow your business."
+    - question: How does the Service Your Clients app work?
+      answer: >-
+        Our application will design a unique serving strategy, tailored to your
+        practice. It will allow you to segment your client bank, decide how you
+        communicate with your clients, and will allow you to identify any
+        clients in vulnerable circumstances. 
 
-        Some revolution is going to happen today\r
 
-        I'm gonna chase the dark clouds away\r
-
-        Come on and help me sing it\r\n"
+        The app will then use this information to generate you a suite of PDF’s that can then be used to disclose the servicing strategy, deliver the agreed service, and allow you to demonstrate how your clients are service.
+    - question: What PFD’s does the Service Your Clients app produce?
+      answer: "The application will produce 4 separate PDF’s: a segmentation summary
+        PDF with an attached Clients in vulnerable circumstances PDF, a sale and
+        purchase PDF, a servicing summary PDF (one per client), and a proposed
+        ongoing schedule PDF (one per household)."
+    - question: Can you update my iBusiness / SalesForce?
+      answer: "Yes! We offer a one-off cost to update your iBusiness/SalesForce
+        records to contain: Individual segmentation (AAA, AA, A), Review months
+        (January-December), All communications (Investor magazines, Birthday
+        cards, Christmas cards, Tax focus cards etc)."
+    - question: How much will the service cost me?
+      answer: This really depends on client bank, needs, and budget – we can tailor
+        this to suit you. For more information on our charges, please click here
+        to view our Client Servicing brochure.
+    - question: Can I outsource my client servicing?
+      answer: Of course! We have a team of dedicated client service administrators on
+        hand to help you with your day-to-day communications. All you have to do
+        is get in touch!
+    - question: Can you talk to clients on my behalf?
+      answer: >+
+        Yes, no problem! We pride ourselves on being friendly and approachable,
+        an extension of your team that your clients can get to know.
 ---
