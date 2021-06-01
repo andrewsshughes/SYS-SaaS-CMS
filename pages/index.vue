@@ -5,6 +5,7 @@
     <Cta />
     <Steps :steps="steps" />
     <Outputdocs :docs="docs" />
+    <Cta :flip="true" />
   </div>
 </template>
 

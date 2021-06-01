@@ -1,5 +1,5 @@
 <template>
-  <div class="cta">
+  <div class="cta" :class="{ flip: flip == true }">
     <div class="container">
       <div class="staff-image">
         <img src="/img/staff-placeholder.png" />
@@ -18,17 +18,29 @@
   </div>
 </template>
 
+<script>
+export default {
+  props: ['flip'],
+}
+</script>
+
 <style scoped>
 .cta {
   height: 250px;
   background: linear-gradient(90deg, #048dfd 0%, #ed0874 150%);
   margin-bottom: 100px;
 }
+.cta.cta.flip {
+  margin-bottom: 0;
+}
 .cta .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+.cta.flip .container {
+  flex-direction: row-reverse;
 }
 .cta .staff-image {
   height: 250px;

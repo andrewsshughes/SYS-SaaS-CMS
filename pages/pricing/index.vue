@@ -2,6 +2,7 @@
   <div class="page-content">
     <Cliff :cliff="cliff" :small="true" />
     <Pricinglist :price="price" />
+    <Cta :flip="true" />
   </div>
 </template>
 
