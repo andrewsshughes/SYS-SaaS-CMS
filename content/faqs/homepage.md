@@ -14,6 +14,11 @@ faq:
         waiting to help you by providing client servicing support. We can handle
         your day-to-day obligations giving you more time to spend with your
         clients and grow your business."
+    - question: What happens to my clients data?
+      answer: It stays on your device. The app has been developed to use storage
+        within your browser to ensure that there's minimal chance of your
+        clients data ending up somewhere it shouldn't be. The stored data is
+        also encrypted (AES-256) just for more piece of mind.
     - question: How does the Service Your Clients app work?
       answer: >-
         Our application will design a unique serving strategy, tailored to your
@@ -45,9 +50,4 @@ faq:
       answer: >
         Yes, no problem! We pride ourselves on being friendly and approachable,
         an extension of your team that your clients can get to know.
-    - question: What happens to my clients data?
-      answer: It stays on your device. The app has been developed to use storage
-        within your browser to ensure that there's minimal chance of your
-        clients data ending up somewhere it shouldn't be. The stored data is
-        also encrypted (AES-256) just for more piece of mind.
 ---
