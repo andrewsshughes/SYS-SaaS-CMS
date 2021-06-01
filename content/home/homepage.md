@@ -46,4 +46,9 @@ steps:
 
       * Highlight any under 18's
     icon: /img/Households.svg
+  - title: Allocate review dates, communications and client interactions
+    desc: The system allows you to easily allocate review dates on a household or
+      individual basis. You can then review the auto assigned communication
+      strategy and amend, should you require.
+    icon: /img/Households.svg
 ---
