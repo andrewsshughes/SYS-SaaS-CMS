@@ -69,4 +69,28 @@ price:
         and a Client Servicing Questionnaire with a pre-paid envelope. Upon
         receipt of a completed questionnaire, we will attach a copy to iBusiness
         and update the client records accordingly."
+    - type: Fixed Price
+      name: Client Segmentation & Servicing Strategy
+      price: 997
+      desc: "Praesent tincidunt ligula vitae massa rhoncus, ac bibendum velit pretium.
+        Vestibulum ut magna scelerisque, pellentesque dolor vitae, pretium
+        augue. Suspendisse eu augue bibendum, eleifend nulla vitae, lobortis
+        lorem. Nunc finibus vehicula venenatis. Nulla convallis mauris id leo
+        vehicula, eu egestas justo cursus. Pellentesque tortor neque, vehicula
+        sit amet enim sed, posuere dapibus felis. Duis finibus justo in viverra
+        molestie. Suspendisse elementum dignissim lacus, ut porta diam consequat
+        ac.
+
+
+        \r
+
+        \r
+
+        Nulla orci neque, molestie a velit vitae, vulputate molestie
+        augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
+        sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
+        elementum mi. Etiam venenatis venenatis risus et feugiat. Donec at
+        faucibus libero. Vivamus consequat feugiat enim vitae rutrum. Donec
+        iaculis turpis nec sapien iaculis, molestie molestie est bibendum.
+        Aliquam at odio ac est sodales venenatis vel non nibh."
 ---
