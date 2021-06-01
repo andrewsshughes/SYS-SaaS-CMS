@@ -51,4 +51,21 @@ steps:
       individual basis. You can then review the auto assigned communication
       strategy and amend, should you require.
     icon: /img/Households.svg
+  - title: Highlight Vulnerable Clients
+    desc: >-
+      The system allows you to highlight those clients who may fall under the
+      Vulnerable Client status, across the 4 key areas:
+
+
+      * Health
+
+
+      * Life Events
+
+
+      * Resilience
+
+
+      * Capability
+    icon: /img/Households.svg
 ---
