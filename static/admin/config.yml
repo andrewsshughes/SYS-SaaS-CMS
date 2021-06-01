@@ -104,10 +104,11 @@ collections:
             fields:
               - {label: 'Product Name', name: 'name', widget: 'string'}
               - {label: 'Product Price', name: 'price', widget: 'number', type: 'float'}
+              - {label: 'product Description', name: 'desc', widget: 'markdown'}
               - label: 'Pricing Type'
                 name: 'type'
                 widget: 'select'
-                options: ['Per Household', 'Per Client', 'Fixed Price']
+                options: ['Per Household', 'Fixed Price']
                 default: 'Fixed Price'
               - label: 'Ongoing Product'
                 name: 'ongoing'
