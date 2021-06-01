@@ -42,6 +42,7 @@ price:
         augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
         sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
         elementum mi. Etiam venenatis venenatis risus et feugiat."
+      image: /img/client-list-screen.png
     - type: Per Household
       name: iBusiness / SalesForce Update & Data Cleanse
       price: 3
@@ -63,6 +64,7 @@ price:
 
         * All communications (Investor Magazines, Birthday Cards,
         Christmas Cards, Tax Focus Cards etc)"
+      image: /img/microsoftteams-image-3-.png
     - type: Per Household
       name: Client Service Disclosure
       price: 2
@@ -87,4 +89,5 @@ price:
         and a Client Servicing Questionnaire with a pre-paid envelope. Upon
         receipt of a completed questionnaire, we will attach a copy to iBusiness
         and update the client records accordingly."
+      image: /img/microsoftteams-image-2-.png
 ---
