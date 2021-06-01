@@ -12,12 +12,15 @@
             </div>
             <div class="doc-details">
               <span class="doc-sub">The Documents</span>
-              <h2>Segmentation & Service Offering</h2>
-              <p>
-                Monocle ipsum dolor sit amet joy K-pop Tsutaya ryokan, Muji boutique elegant concierge first-class.
-                Winkreative bespoke discerning bulletin international first-class remarkable perfect extraordinary
-                classic carefully curated hub Baggu concierge.
+              <h2>{{ doc.title }}</h2>
+              <p v-for="(chunk, index) in formatDesc(doc.desc, false)" :key="index">
+                {{ chunk }}
               </p>
+              <ul v-if="formatDesc(doc.desc, true).length > 0">
+                <li v-for="(item, index) in formatDesc(doc.desc, true)" :key="index">
+                  {{ item.substr(2, item.length - 2) }}
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -83,7 +86,7 @@ h4 {
   width: 100%;
   gap: 10%;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   position: relative;
 }
 .doc:nth-of-type(2n) {
