@@ -46,6 +46,13 @@ collections:
         editor:
           preview: false
         fields:
+          - label: 'Cliff Content'
+            name: 'cliff'
+            widget: 'object'
+            summary: '{{fields.title}}'
+            fields: 
+              - {label: 'Cliff Title', name: 'title', widget: 'string'}
+              - {label: 'Cliff Content', name: 'desc', widget: 'text'}
           - label: 'USPs'
             name: 'usps'
             widget: 'list'
@@ -55,5 +62,21 @@ collections:
               - {label: 'Title', name: 'title', widget: 'string'}
               - {label: 'Description', name: 'desc', widget: 'text'}
               - {label: 'Line-Awesome Icon', name: 'icon', widget: 'string'}
-
-
+          - label: 'Steps'
+            name: 'steps'
+            widget: 'list'
+            allow_add: true
+            summary: '{{fields.title}}'
+            fields: 
+              - {label: 'Step Title', name: 'title', widget: 'string'}
+              - {label: 'Step Description', name: 'desc', widget: 'text'}
+              - {label: 'Step Image', name: 'icon', widget: 'image'}
+          - label: 'Documents'
+            name: 'docs'
+            widget: 'list'
+            allow_add: true
+            summary: '{{fields.title}}'
+            fields: 
+              - {label: 'Doc Title', name: 'title', widget: 'string'}
+              - {label: 'Doc Description', name: 'desc', widget: 'text'}
+              - {label: 'Dpc Image', name: 'icon', widget: 'image'}
