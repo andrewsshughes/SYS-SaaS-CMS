@@ -6,11 +6,8 @@
     <img class="break" src="/img/cliff-break.svg" />
     <div class="container">
       <div class="content">
-        <h1>This is the page heading my guy!</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec iaculis neque. Sed bibendum diam in quam
-          rutrum congue. Proin vel congue odio.
-        </p>
+        <h1>{{ cliff.title }}</h1>
+        <p>{{ cliff.desc }}</p>
         <div class="btn-group">
           <div class="btn secondary"><i class="las la-download"></i> Download Brochure</div>
           <div class="btn">Get in touch</div>
@@ -22,6 +19,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ['cliff'],
+}
+</script>
 
 <style scoped>
 .cliff {

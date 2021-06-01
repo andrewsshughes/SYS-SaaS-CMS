@@ -19,27 +19,7 @@
 
 <script>
 export default {
-  data: function () {
-    return {
-      usps: [
-        {
-          title: '100% Effective 10% of the time',
-          desc: 'Most of the time you need us we will be there eventually',
-          icon: 'clock',
-        },
-        {
-          title: "You do all the work so we don't have to",
-          desc: 'Use your time and energy so we can just chill and look good',
-          icon: 'sun',
-        },
-        {
-          title: 'You can take all your own calls',
-          desc: 'Use your familiar feels so that you get to know your clients',
-          icon: 'phone',
-        },
-      ],
-    }
-  },
+  props: ['usps'],
 }
 </script>
 

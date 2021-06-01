@@ -69,7 +69,7 @@ collections:
             summary: '{{fields.title}}'
             fields: 
               - {label: 'Step Title', name: 'title', widget: 'string'}
-              - {label: 'Step Description', name: 'desc', widget: 'text'}
+              - {label: 'Step Description', name: 'desc', widget: 'markdown'}
               - {label: 'Step Image', name: 'icon', widget: 'image'}
           - label: 'Documents'
             name: 'docs'
@@ -78,5 +78,5 @@ collections:
             summary: '{{fields.title}}'
             fields: 
               - {label: 'Doc Title', name: 'title', widget: 'string'}
-              - {label: 'Doc Description', name: 'desc', widget: 'text'}
+              - {label: 'Doc Description', name: 'desc', widget: 'markdown'}
               - {label: 'Dpc Image', name: 'icon', widget: 'image'}
