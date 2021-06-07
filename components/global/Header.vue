@@ -48,11 +48,11 @@ header .logo img {
 nav {
   display: flex;
   color: white;
-  justify-content: center;
+  justify-content: space-around;
   flex-basis: 33.33%;
+  min-width: 500px;
 }
 nav a {
-  margin-right: 50px;
   cursor: pointer;
   text-align: center;
   position: relative;
@@ -76,7 +76,7 @@ nav a:hover:before {
 .cta-wrap {
   flex-basis: 33.33%;
   flex-grow: 0;
-  flex-shrink: 0;
+  flex-shrink: 1;
   display: flex;
   justify-content: flex-end;
 }
@@ -106,5 +106,20 @@ nav a:hover:before {
 }
 i {
   font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  header .logo {
+    margin-bottom: 20px;
+  }
+  nav {
+    min-width: 350px;
+  }
+  header .cta {
+    display: none;
+  }
 }
 </style>

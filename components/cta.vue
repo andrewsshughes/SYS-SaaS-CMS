@@ -76,4 +76,16 @@ export default {
   color: white;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 768px) {
+  .cta .container {
+    align-items: center;
+    height: 100%;
+  }
+  .cta .container .contents {
+    margin: 0;
+  }
+  .cta .staff-image {
+    display: none;
+  }
+}
 </style>

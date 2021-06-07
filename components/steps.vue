@@ -157,4 +157,47 @@ export default {
     box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
   }
 }
+@media screen and (max-width: 768px) {
+  .step,
+  .step:nth-of-type(2n) {
+    flex-direction: column;
+    padding: 0;
+  }
+  .step:nth-of-type(2n) h2 {
+    text-align: right;
+  }
+  .step:nth-of-type(2n) .step-no {
+    text-align: right;
+    width: 100%;
+    display: block;
+  }
+  .step:after {
+    width: calc(50% + 20px);
+    left: -20px;
+  }
+  .step:nth-of-type(2n):after {
+    width: calc(50% + 20px);
+    left: 50%;
+  }
+  .step:before {
+    display: none;
+  }
+  .step .step-no::before {
+    position: absolute;
+    left: -24px;
+    top: 28px;
+    width: 9px;
+    height: 9px;
+    background: transparent;
+    content: '';
+    border-radius: 10px;
+    background: #ed0874;
+    box-shadow: 0px 0px 0px 3px rgba(237, 8, 116, 0.5);
+    animation: spot 1000ms ease-in-out infinite;
+    z-index: 4;
+  }
+  .step:nth-of-type(2n) .step-no:before {
+    left: calc(100% + 16px);
+  }
+}
 </style>

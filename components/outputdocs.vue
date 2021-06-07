@@ -118,4 +118,31 @@ h4 {
   color: #ed0874;
   font-weight: 600;
 }
+@media screen and (max-width: 768px) {
+  .output-docs {
+    padding: 30px 10px;
+  }
+  .output-docs > p {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+  .doc,
+  .doc:nth-of-type(2n) {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .doc .doc-img-wrap {
+    margin-bottom: 30px;
+  }
+  .doc h2 {
+    text-align: center;
+  }
+  .doc .doc-sub {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
 </style>

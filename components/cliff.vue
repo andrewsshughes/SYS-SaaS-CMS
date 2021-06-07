@@ -31,7 +31,7 @@ export default {
   position: relative;
   background: red;
   height: 800px;
-  padding-top: 200px;
+  padding-top: 150px;
   box-sizing: border-box;
   width: 100%;
   margin-bottom: 250px;
@@ -105,5 +105,16 @@ export default {
   border: 1px solid #f2f2f2;
   max-width: 55%;
   object-fit: contain;
+}
+@media screen and (max-width: 768px) {
+  .cliff .content {
+    width: 90%;
+  }
+  .cliff .content p {
+    margin-bottom: 30px;
+  }
+  .preview-wrap img {
+    max-width: 90%;
+  }
 }
 </style>

@@ -133,4 +133,13 @@ export default {
 .faq.selected i {
   color: white;
 }
+@media screen and (max-width: 768px) {
+  .faqs .faqs-wrap {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .faqs {
+    margin-bottom: 20px;
+  }
+}
 </style>

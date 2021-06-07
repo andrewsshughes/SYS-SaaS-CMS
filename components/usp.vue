@@ -107,4 +107,21 @@ h2 {
   width: 80%;
   text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+  .usp p,
+  .usps .container > p {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .usp-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .usp {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
 </style>

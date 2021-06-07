@@ -111,7 +111,7 @@ export default {
   position: absolute;
   height: 100%;
   object-fit: cover;
-  object-position: top;
+  object-position: top left;
 }
 .card .name-wrap h3 {
   font-size: 20px;
@@ -143,5 +143,28 @@ export default {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .price-list .card,
+  .price-list .card:nth-of-type(2n + 1) {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+  }
+  .price-list .card:last-of-type {
+    margin-bottom: 0px;
+  }
+  .price-list .card .contents {
+    margin-top: 30px;
+  }
+  .price-list .card .contents .price .value,
+  .price-list .card .contents .price .freq {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  .pricing {
+    margin-bottom: 0px;
+  }
 }
 </style>

@@ -117,3 +117,23 @@ li {
 .btn.secondary:hover:before {
     left: 150%;
 }
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(100% - 40px);
+        min-width: none;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .btn-group {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .btn, .btn.secondary {
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+}

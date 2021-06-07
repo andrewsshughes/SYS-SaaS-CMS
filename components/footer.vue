@@ -41,4 +41,20 @@
 .links a:hover {
   color: #ed0874;
 }
+@media screen and (max-width: 768px) {
+  .footer .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .footer > * {
+    margin-bottom: 15px;
+  }
+  .footer .links {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .footer .comp-info {
+    text-align: center;
+  }
+}
 </style>
