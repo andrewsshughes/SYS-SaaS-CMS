@@ -15,7 +15,18 @@
       </div>
     </div>
     <div class="preview-wrap" v-if="small != true">
-      <img src="/img/client-list-screen.png" />
+      <div class="preview-img-wrap">
+        <img
+          v-for="(preview, index) in previews"
+          :key="index"
+          :src="preview"
+          :class="{
+            next: (index == 0 && currentPreview == previews.length - 1) || currentPreview + 1 == index,
+            last: index + 1 == currentPreview || (currentPreview == 0 && index == previews.length - 1),
+            active: index == currentPreview,
+          }"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -23,6 +34,24 @@
 <script>
 export default {
   props: ['cliff', 'small'],
+  data: function () {
+    return {
+      currentPreview: 0,
+      previews: [
+        '/img/preview-screen-1.png',
+        '/img/preview-screen-2.png',
+        '/img/preview-screen-3.png',
+        '/img/preview-screen-4.png',
+        '/img/preview-screen-5.png',
+      ],
+    }
+  },
+  mounted() {
+    setInterval(() => {
+      this.currentPreview = this.currentPreview + 1
+      this.currentPreview = this.currentPreview > this.previews.length - 1 ? 0 : this.currentPreview
+    }, 5000)
+  },
 }
 </script>
 
@@ -98,13 +127,36 @@ export default {
   max-width: 100%;
   left: 50%;
 }
-.preview-wrap img {
-  max-height: 600px;
+.preview-img-wrap {
+  max-width: 55%;
+  position: relative;
+  width: 55%;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgb(0 11 40 / 10%);
   border: 1px solid #f2f2f2;
-  max-width: 55%;
+  padding-top: 30.65%;
+  overflow: hidden;
+}
+.preview-wrap img {
   object-fit: contain;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: auto;
+  transition: 500ms ease-in-out;
+  display: none;
+}
+.preview-wrap img.next {
+  left: 100%;
+  display: block;
+}
+.preview-wrap img.active {
+  display: block;
+}
+.preview-wrap img.last {
+  left: -100%;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .cliff .content {
@@ -113,8 +165,10 @@ export default {
   .cliff .content p {
     margin-bottom: 30px;
   }
-  .preview-wrap img {
-    max-width: 90%;
+  .preview-img-wrap {
+    max-width: unset;
+    width: 90%;
+    padding-top: 50.65%;
   }
 }
 </style>
