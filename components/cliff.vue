@@ -26,8 +26,8 @@
             active: index == currentPreview,
           }"
         />
-        <div class="movePulse"></div>
       </div>
+      <div class="movePulse"></div>
     </div>
   </div>
 </template>
@@ -137,6 +137,7 @@ export default {
   border: 1px solid #f2f2f2;
   padding-top: 30.65%;
   overflow: hidden;
+  z-index: 2;
 }
 .preview-wrap img {
   object-fit: contain;
@@ -160,47 +161,38 @@ export default {
   display: block;
 }
 .movePulse {
-  width: 0%;
   height: 100%;
   top: 0;
-  right: 0;
+  left: 22.5%;
+  width: 55%;
   position: absolute;
-  background: linear-gradient(90deg, #048dfd00 0%, #048dfdff 150%);
+  box-shadow: 0 0px 0px #048dfdff;
   opacity: 0.75;
   animation: pulse ease 5s infinite;
+  border-radius: 10px;
+  z-index: 1;
+  opacity: 0;
 }
 @keyframes pulse {
   0% {
+    box-shadow: 0 0 0px #048dfdff;
     opacity: 0;
-    width: 0%;
   }
-  10% {
+  25% {
+    box-shadow: 15px 0 50px #048dfdff;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0px #048dfdff;
     opacity: 0;
-    width: 0%;
   }
-  18% {
-    opacity: 0.5;
-    width: 5%;
+  75% {
+    box-shadow: 15px 0 70px #048dfdff;
+    opacity: 1;
   }
-  40% {
+  100% {
+    box-shadow: 0 0 0px #048dfdff;
     opacity: 0;
-    width: 0%;
-  }
-  48% {
-    width: 8%;
-    opacity: 0.75;
-  }
-  60% {
-    opacity: 0;
-    width: 0%;
-  }
-  68% {
-    opacity: 0.5;
-    width: 5%;
-  }
-  80% {
-    opacity: 0;
-    width: 0%;
   }
 }
 @media screen and (max-width: 768px) {
