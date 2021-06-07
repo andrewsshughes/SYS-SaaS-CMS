@@ -180,7 +180,7 @@ export default {
   }
   25% {
     box-shadow: 15px 0 50px #048dfdff;
-    opacity: 1;
+    opacity: 0.5;
   }
   50% {
     box-shadow: 0 0 0px #048dfdff;
@@ -188,7 +188,7 @@ export default {
   }
   75% {
     box-shadow: 15px 0 70px #048dfdff;
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     box-shadow: 0 0 0px #048dfdff;
