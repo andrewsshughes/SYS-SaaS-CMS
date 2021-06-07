@@ -26,6 +26,7 @@
             active: index == currentPreview,
           }"
         />
+        <div class="movePulse"></div>
       </div>
     </div>
   </div>
@@ -157,6 +158,50 @@ export default {
 .preview-wrap img.last {
   left: -100%;
   display: block;
+}
+.movePulse {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(90deg, #048dfd00 0%, #048dfdff 150%);
+  opacity: 0.75;
+  animation: pulse ease 5s infinite;
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  10% {
+    opacity: 0;
+    width: 0%;
+  }
+  18% {
+    opacity: 0.5;
+    width: 5%;
+  }
+  40% {
+    opacity: 0;
+    width: 0%;
+  }
+  48% {
+    width: 8%;
+    opacity: 0.75;
+  }
+  60% {
+    opacity: 0;
+    width: 0%;
+  }
+  68% {
+    opacity: 0.5;
+    width: 5%;
+  }
+  80% {
+    opacity: 0;
+    width: 0%;
+  }
 }
 @media screen and (max-width: 768px) {
   .cliff .content {
