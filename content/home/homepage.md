@@ -82,35 +82,35 @@ docs:
     icon: /img/segments.png
   - title: Individual Client Servicing Statements
     desc: >-
-      This one page document summarises what client will receive on an annual
-      basis, including:
+      Client Statements are a breakdown of the servicing to be administered to
+      your clients. You will receive one for each of your clients. 
 
 
-      * Client Bank Evaluation
+      This document details:
 
 
-      * Individual Segmentation & Communication Strategy
+      * The Client's designated menu
+
+
+      * The Communication the clients will receive
+
+
+      * Any vulnerabilities you are aware of the client having
     icon: /img/statement.png
   - title: Proposed On-going Service Schedule Summary
     desc: >
-      This one page document allows you to clearly show a top level summary of
-      your Servicing Strategy, including:
+      This document outlines the proposed service schedule and is ready to be
+      printed using your letterheaded paper.
 
 
-      * Client Bank Evaluation
-
-
-      * Individual Segmentation & Communication Strategy
+      This will introduce your clients to their strategy including their review meeting dates and the communications they can expect.
     icon: /img/ongoing-service.png
   - title: Highlighted Business Sale &Purchase Clients
     desc: >-
-      This one page document allows you to clearly show a top level summary of
-      your Servicing Strategy, including:
+      A list of your Business Sale and Purchase clients will be generated based
+      on information gathered during the process.
 
 
-      * Client Bank Evaluation
-
-
-      * Individual Segmentation & Communication Strategy
+      The selected clients will then be listed along with their respective FUMs for future use.
     icon: /img/adviser-breakdown.png
 ---
