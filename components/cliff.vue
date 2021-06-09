@@ -12,7 +12,7 @@
           <a class="btn secondary" href="https://meetings.hubspot.com/megan-bradshaw"
             ><i class="las la-phone"></i> Request a call</a
           >
-          <a class="btn" href="https://meetings.hubspot.com/megan-bradshaw/1-hour-demo">Arrange a Demo</a>
+          <a class="btn heavy" href="https://meetings.hubspot.com/megan-bradshaw/1-hour-demo">Arrange a Demo</a>
         </div>
       </div>
     </div>
