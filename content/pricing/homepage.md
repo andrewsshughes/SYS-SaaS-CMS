@@ -20,9 +20,9 @@ prices:
     ongoing: true
 price:
   title: Pricing to fit your requirements
-  desc: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu
-    lorem ultricies, aliquet tortor eget, consequat leo. Curabitur malesuada
-    nisl pulvinar mollis facilisis. Etiam dapibus a diam ut condimentum.
+  desc: "Whether you require full support, or only the use to the App, our team is
+    able to assist you at various stages throughout the Client Servicing
+    process. "
   prices:
     - type: Fixed Price
       name: Client Segmentation & Servicing Strategy
