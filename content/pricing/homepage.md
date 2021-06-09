@@ -27,21 +27,28 @@ price:
     - type: Fixed Price
       name: Client Segmentation & Servicing Strategy
       price: 997
-      desc: "Praesent tincidunt ligula vitae massa rhoncus, ac bibendum velit pretium.
-        Vestibulum ut magna scelerisque, pellentesque dolor vitae, pretium
-        augue. Suspendisse eu augue bibendum, eleifend nulla vitae, lobortis
-        lorem. Nunc finibus vehicula venenatis. Nulla convallis mauris id leo
-        vehicula, eu egestas justo cursus.
+      desc: >-
+        By utilising cutting edge software, you are able to easily design your
+        entire client servicing solution, with custom menus, review dates and
+        communication strategies.
 
 
-        \r
+        Upon completion, you are provided with 4 key document sets, including:
 
-        \r
 
-        Nulla orci neque, molestie a velit vitae, vulputate molestie
-        augue. Quisque eu ornare libero. Maecenas quis pellentesque velit. Nam
-        sed lorem ac enim tristique sollicitudin. Aenean at fringilla elit, in
-        elementum mi. Etiam venenatis venenatis risus et feugiat."
+        * Segmentation & Service Offering
+
+
+        * Proposed On-going Service Schedule Summary
+
+
+        * Client Statements
+
+
+        * Client Business Sale & Purchase
+
+
+        * Highlighted Vulnerable Clients
       image: /img/Client segmentation.png
     - type: Per Household
       name: iBusiness / SalesForce Update & Data Cleanse
