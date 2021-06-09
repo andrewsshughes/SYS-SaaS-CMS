@@ -11,10 +11,10 @@
           <router-link to="/faqs">FAQs</router-link>
         </nav>
         <div class="cta-wrap">
-          <div class="cta">
+          <a class="cta" href="https://meetings.hubspot.com/megan-bradshaw">
             <i class="las la-phone"></i>
             <span>Request a call</span>
-          </div>
+          </a>
         </div>
       </header>
     </div>
@@ -92,6 +92,7 @@ nav a:hover:before {
   overflow: hidden;
   background: rgba(255, 255, 255, 0);
   border-radius: 20px;
+  text-decoration: none;
 }
 .cta:hover {
   max-width: 165px;
