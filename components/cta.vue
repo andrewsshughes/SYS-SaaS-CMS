@@ -11,7 +11,9 @@
       <div class="contents">
         <h2>Would you like a demonstration?</h2>
         <div class="btn-group">
-          <div class="btn light heavy">Click here to book</div>
+          <a class="btn light heavy" href="https://meetings.hubspot.com/megan-bradshaw/1-hour-demo"
+            >Click here to book</a
+          >
         </div>
       </div>
     </div>

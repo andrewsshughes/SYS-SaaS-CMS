@@ -9,8 +9,10 @@
         <h1>{{ cliff.title }}</h1>
         <p>{{ cliff.desc }}</p>
         <div class="btn-group" v-if="small != true">
-          <div class="btn secondary"><i class="las la-phone"></i> Request a call</div>
-          <div class="btn">Arrange a Demo</div>
+          <a class="btn secondary" href="https://meetings.hubspot.com/megan-bradshaw"
+            ><i class="las la-phone"></i> Request a call</a
+          >
+          <a class="btn" href="https://meetings.hubspot.com/megan-bradshaw/1-hour-demo">Arrange a Demo</a>
         </div>
       </div>
     </div>
