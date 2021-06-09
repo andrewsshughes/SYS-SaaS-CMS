@@ -69,7 +69,7 @@ steps:
       * Capability
     icon: /img/vulnerabilites.svg
 docs:
-  - title: Segmentation & ServiceOffering
+  - title: Segmentation & Service Offering
     desc: >-
       This one page document allows you to clearly show a top level summary of
       your Servicing Strategy, including:
