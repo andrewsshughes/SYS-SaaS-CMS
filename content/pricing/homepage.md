@@ -12,7 +12,7 @@ prices:
     name: Client Service Disclosure
     price: 2
   - type: Per Household
-    name: iBusiness / SalesForce Update & Data Cleanse
+    name: iBusiness / Salesforce Update & Data Cleanse
     price: 3
   - type: Fixed Price
     name: Admin Hours (example price)
@@ -51,7 +51,7 @@ price:
         * Highlighted Vulnerable Clients
       image: /img/Client segmentation.png
     - type: Per Household
-      name: iBusiness / SalesForce Update & Data Cleanse
+      name: iBusiness / Salesforce Update & Data Cleanse
       price: 3
       desc: "In order to effectively manage and implement your Client Servicing
         Strategy, your client records must be accurate and up to date, whilst

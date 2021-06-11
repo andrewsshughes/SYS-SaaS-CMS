@@ -33,8 +33,8 @@ faq:
         PDF with an attached Clients in vulnerable circumstances PDF, a sale and
         purchase PDF, a servicing summary PDF (one per client), and a proposed
         ongoing schedule PDF (one per household)."
-    - question: Can you update my iBusiness / SalesForce?
-      answer: "Yes! We offer a one-off cost to update your iBusiness/SalesForce
+    - question: Can you update my iBusiness / Salesforce?
+      answer: "Yes! We offer a one-off cost to update your iBusiness/Salesforce
         records to contain: Individual segmentation (AAA, AA, A), Review months
         (January-December), All communications (Investor magazines, Birthday
         cards, Christmas cards, Tax focus cards etc)."
