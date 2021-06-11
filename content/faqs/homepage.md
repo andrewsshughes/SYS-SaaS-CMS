@@ -1,11 +1,11 @@
 ---
 cliff:
   title: FAQ's
-  desc: Below you will find all the answer to any questions you may have.
+  desc: Below you will find all the answers to any questions you may have.
 faq:
   title: "Want to know more? "
-  desc: Below is everything you many need to know about PLUS Client Servicing. If
-    the answer isn't there get feel free to get in touch
+  desc: Below is everything you many need to know about Plus Client Servicing. If
+    the answer isn't there feel free to get in touch
   faqs:
     - question: Why should I use your service?
       answer: "\r
@@ -28,7 +28,7 @@ faq:
 
 
         The app will then use this information to generate you a suite of PDF’s that can then be used to disclose the servicing strategy, deliver the agreed service, and allow you to demonstrate how your clients are service.
-    - question: What PFD’s does the Service Your Clients app produce?
+    - question: What PDF’s does the Service Your Clients app produce?
       answer: "The application will produce 4 separate PDF’s: a segmentation summary
         PDF with an attached Clients in vulnerable circumstances PDF, a sale and
         purchase PDF, a servicing summary PDF (one per client), and a proposed
@@ -40,8 +40,7 @@ faq:
         cards, Christmas cards, Tax focus cards etc)."
     - question: How much will the service cost me?
       answer: This really depends on client bank, needs, and budget – we can tailor
-        this to suit you. For more information on our charges, please click here
-        to view our Client Servicing brochure.
+        this to suit you.
     - question: Can I outsource my client servicing?
       answer: Of course! We have a team of dedicated client service administrators on
         hand to help you with your day-to-day communications. All you have to do

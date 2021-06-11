@@ -2,9 +2,9 @@
   <div class="header">
     <div class="container">
       <header>
-        <div class="logo">
+        <router-link to="/" class="logo">
           <img src="/img/PlusGroupLogo.svg" />
-        </div>
+        </router-link>
         <nav>
           <router-link to="/">How it works</router-link>
           <router-link to="/pricing">Pricing</router-link>
