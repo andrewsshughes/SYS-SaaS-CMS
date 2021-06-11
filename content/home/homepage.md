@@ -105,7 +105,7 @@ docs:
 
       This will introduce your clients to their strategy including their review meeting dates and the communications they can expect.
     icon: /img/ongoing-service.png
-  - title: Highlighted Business Sale &Purchase Clients
+  - title: Highlighted Business Sale & Purchase Clients
     desc: >-
       A list of your Business Sale and Purchase clients will be generated based
       on information gathered during the process.
