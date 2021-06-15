@@ -1,6 +1,8 @@
 <template>
   <div class="steps">
     <div class="container">
+      <h4>How it works</h4>
+      <h2>The Process</h2>
       <div class="step" v-for="(step, index) in steps" :key="index">
         <div class="step-img-wrap">
           <img :src="step.icon" />
@@ -53,6 +55,25 @@ export default {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+.steps .container > h2 {
+  color: #048dfd;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.steps .container > h4 {
+  color: #ed0874;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.steps .container > p {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 .step {
   display: flex;
