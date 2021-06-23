@@ -13,7 +13,7 @@
               <h3>{{ price.name }}</h3>
             </div>
             <div class="price">
-              <span class="value">£{{ price.price.toFixed(2) }}</span>
+              <span class="value">£{{ price.price.toFixed(2) }}<span class="freq">exc. VAT</span></span>
               <span v-if="price.type != 'Fixed Price'" class="freq">{{ price.type }}</span>
               <p v-for="(chunk, index) in formatDesc(price.desc, false)" :key="index">
                 {{ chunk }}
