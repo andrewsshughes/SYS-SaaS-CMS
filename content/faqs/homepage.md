@@ -49,4 +49,54 @@ faq:
       answer: >
         Yes, no problem! We pride ourselves on being friendly and approachable,
         an extension of your team that your clients can get to know.
+    - question: Can the service help me improve my PQS?
+      answer: >-
+        Yes. We can book in your overdue review meetings with clients, and help
+        you stay on top of
+
+        your upcoming review meetings, all while delivering your unique servicing strategy. Keeping
+
+        up to date with your review meetings and ensuring all communications are tracked on
+
+        Salesforce will improve your PQS.
+    - question: What are the 5 clients servicing principles?
+      answer: >-
+        Principle 1: As part of proving an ongoing service, every client should
+        have an in-depth
+
+        periodic review as agreed with the client.
+
+
+
+        Principle 2: Reviews should be appropriate, Individual, suitable, documented and confirmed
+
+        in writing.
+
+
+
+        Principle 3: Clients’ expectations will typically be proportionate to the quantum of fees paid.
+
+
+
+        Principle 4: You have a special duty of care where clients are or become vulnerable.
+
+
+
+        Principle 5: Whatever CRM systems you use, all client agreements and review
+
+        documentation need to be captured and recorded. The CFR moving to Salesforce will help
+
+        us keep this vital document up to date and accurate at all times.
+    - question: Can you help me achieve the 5 client servicing principles?
+      answer: >-
+        Yes. We can book in your overdue review meetings with clients, and help
+        you stay on top of
+
+        your upcoming review meetings, all while delivering your unique servicing strategy. The
+
+        PDF’s our app produces helps us to track client vulnerabilities and amend your servicing
+
+        strategy appropriately to those specific clients. We ensure all communications we have with
+
+        your clients are up to date and tracked on Salesforce.
 ---
