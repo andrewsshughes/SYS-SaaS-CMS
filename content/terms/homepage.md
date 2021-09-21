@@ -165,7 +165,5 @@ content: >
   Contact Us
 
 
-  If you have any questions about these Terms and Conditions, You can contact us:
-
-  * By visiting this page on our website: https://serviceyourclients.co.uk/privacy
+  If you have any questions about these Terms and Conditions, You can contact us by visiting this page on our website: https://serviceyourclients.co.uk/privacy
 ---
