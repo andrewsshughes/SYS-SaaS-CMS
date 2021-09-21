@@ -12,140 +12,178 @@ public_folder: /img
 
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
-  - label: 'Site settings'
-    name: 'site'
+  - label: "Site settings"
+    name: "site"
     files:
-      - label: 'Info'
-        name: 'info'
-        file: 'content/site/info.json'
-        format: 'json'
+      - label: "Info"
+        name: "info"
+        file: "content/site/info.json"
+        format: "json"
         editor:
           preview: false
         fields:
-          - { label: Site Name, name: sitename, widget: string, hint: 'This is used for the site title' }
+          - {
+              label: Site Name,
+              name: sitename,
+              widget: string,
+              hint: "This is used for the site title",
+            }
           - {
               label: Site Description,
               name: sitedescription,
               widget: string,
-              hint: 'This is used as descriptive text for links that link to this site',
+              hint: "This is used as descriptive text for links that link to this site",
             }
           - {
               label: Site Language,
               name: sitelang,
               widget: string,
-              pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
+              pattern:
+                [
+                  "^[a-z]{2}([-])?([A-Za-z]{2})?$",
+                  'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")',
+                ],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - label: 'Homepage'
-    name: 'home'
+  - label: "Homepage"
+    name: "home"
     files:
-      - label: 'Content'
-        name: 'content'
-        file: 'content/home/homepage.md'
-        format: 'md'
+      - label: "Content"
+        name: "content"
+        file: "content/home/homepage.md"
+        format: "md"
         editor:
           preview: false
         fields:
-          - label: 'Cliff Content'
-            name: 'cliff'
-            widget: 'object'
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Cliff Title', name: 'title', widget: 'string'}
-              - {label: 'Cliff Content', name: 'desc', widget: 'text'}
-          - label: 'USPs'
-            name: 'usps'
-            widget: 'list'
+          - label: "Cliff Content"
+            name: "cliff"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Cliff Title", name: "title", widget: "string" }
+              - { label: "Cliff Content", name: "desc", widget: "text" }
+          - label: "USPs"
+            name: "usps"
+            widget: "list"
             allow_add: true
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Title', name: 'title', widget: 'string'}
-              - {label: 'Description', name: 'desc', widget: 'text'}
-              - {label: 'Line-Awesome Icon', name: 'icon', widget: 'string'}
-          - label: 'Steps'
-            name: 'steps'
-            widget: 'list'
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "desc", widget: "text" }
+              - { label: "Line-Awesome Icon", name: "icon", widget: "string" }
+          - label: "Steps"
+            name: "steps"
+            widget: "list"
             allow_add: true
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Step Title', name: 'title', widget: 'string'}
-              - {label: 'Step Description', name: 'desc', widget: 'markdown'}
-              - {label: 'Step Image', name: 'icon', widget: 'image'}
-          - label: 'Documents'
-            name: 'docs'
-            widget: 'list'
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Step Title", name: "title", widget: "string" }
+              - { label: "Step Description", name: "desc", widget: "markdown" }
+              - { label: "Step Image", name: "icon", widget: "image" }
+          - label: "Documents"
+            name: "docs"
+            widget: "list"
             allow_add: true
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Doc Title', name: 'title', widget: 'string'}
-              - {label: 'Doc Description', name: 'desc', widget: 'markdown'}
-              - {label: 'Dpc Image', name: 'icon', widget: 'image'}
-  - label: 'Pricing'
-    name: 'pricing'
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Doc Title", name: "title", widget: "string" }
+              - { label: "Doc Description", name: "desc", widget: "markdown" }
+              - { label: "Dpc Image", name: "icon", widget: "image" }
+  - label: "Pricing"
+    name: "pricing"
     files:
-      - label: 'Content'
-        name: 'content'
-        file: 'content/pricing/homepage.md'
-        format: 'md'
+      - label: "Content"
+        name: "content"
+        file: "content/pricing/homepage.md"
+        format: "md"
         editor:
           preview: false
         fields:
-          - label: 'Cliff Content'
-            name: 'cliff'
-            widget: 'object'
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Cliff Title', name: 'title', widget: 'string'}
-              - {label: 'Cliff Content', name: 'desc', widget: 'text'}
-          - label: 'Price Content'
-            name: 'price'
-            widget: 'object'
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Price Title', name: 'title', widget: 'string'}
-              - {label: 'Price Content', name: 'desc', widget: 'text'}
-              - label: 'Price List'
-                name: 'prices'
-                widget: 'list'
-                summary: '{{fields.name}}'
+          - label: "Cliff Content"
+            name: "cliff"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Cliff Title", name: "title", widget: "string" }
+              - { label: "Cliff Content", name: "desc", widget: "text" }
+          - label: "Price Content"
+            name: "price"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Price Title", name: "title", widget: "string" }
+              - { label: "Price Content", name: "desc", widget: "text" }
+              - label: "Price List"
+                name: "prices"
+                widget: "list"
+                summary: "{{fields.name}}"
                 fields:
-                  - {label: 'Product Name', name: 'name', widget: 'string'}
-                  - {label: 'Product Price', name: 'price', widget: 'number', type: 'float'}
-                  - {label: 'Product Description', name: 'desc', widget: 'markdown'}
-                  - {label: 'Product Image', name: 'image', widget: 'image'}
-                  - label: 'Pricing Type'
-                    name: 'type'
-                    widget: 'select'
-                    options: ['Per Household', 'Fixed Price']
-                    default: 'Fixed Price'
-  - label: 'FAQs'
-    name: 'faqs'
+                  - { label: "Product Name", name: "name", widget: "string" }
+                  - {
+                      label: "Product Price",
+                      name: "price",
+                      widget: "number",
+                      type: "float",
+                    }
+                  - {
+                      label: "Product Description",
+                      name: "desc",
+                      widget: "markdown",
+                    }
+                  - { label: "Product Image", name: "image", widget: "image" }
+                  - label: "Pricing Type"
+                    name: "type"
+                    widget: "select"
+                    options: ["Per Household", "Fixed Price"]
+                    default: "Fixed Price"
+  - label: "FAQs"
+    name: "faqs"
     files:
-      - label: 'Content'
-        name: 'content'
-        file: 'content/faqs/homepage.md'
-        format: 'md'
+      - label: "Content"
+        name: "content"
+        file: "content/faqs/homepage.md"
+        format: "md"
         editor:
           preview: false
         fields:
-          - label: 'Cliff Content'
-            name: 'cliff'
-            widget: 'object'
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'Cliff Title', name: 'title', widget: 'string'}
-              - {label: 'Cliff Content', name: 'desc', widget: 'text'}
-          - label: 'FAQ Content'
-            name: 'faq'
-            widget: 'object'
-            summary: '{{fields.title}}'
-            fields: 
-              - {label: 'FAQ Title', name: 'title', widget: 'string'}
-              - {label: 'FAQ Content', name: 'desc', widget: 'text'}
-              - label: 'FAQs'
-                name: 'faqs'
-                widget: 'list'
-                summary: '{{fields.question}}'
+          - label: "Cliff Content"
+            name: "cliff"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Cliff Title", name: "title", widget: "string" }
+              - { label: "Cliff Content", name: "desc", widget: "text" }
+          - label: "FAQ Content"
+            name: "faq"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "FAQ Title", name: "title", widget: "string" }
+              - { label: "FAQ Content", name: "desc", widget: "text" }
+              - label: "FAQs"
+                name: "faqs"
+                widget: "list"
+                summary: "{{fields.question}}"
                 fields:
-                  - {label: 'Question', name: 'question', widget: 'string'}
-                  - {label: 'Answer', name: 'answer', widget: 'markdown'}
+                  - { label: "Question", name: "question", widget: "string" }
+                  - { label: "Answer", name: "answer", widget: "markdown" }
+  - label: "Terms & Conditions"
+    name: "terms"
+    files:
+      - label: "Content"
+        name: "content"
+        file: "content/terms/homepage.md"
+        format: "md"
+        editor:
+          preview: false
+        fields:
+          - label: "Cliff Content"
+            name: "cliff"
+            widget: "object"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Cliff Title", name: "title", widget: "string" }
+              - { label: "Cliff Content", name: "desc", widget: "text" }
+          - label: "Page Content"
+            name: "content"
+            widget: "text"
