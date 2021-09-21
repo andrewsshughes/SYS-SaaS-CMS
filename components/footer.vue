@@ -9,6 +9,7 @@
         <router-link to="/">How it works</router-link>
         <router-link to="/pricing">Pricing</router-link>
         <router-link to="/faqs">FAQs</router-link>
+        <router-link to="/terms-and-conditions">Terms and Conditions</router-link>
       </div>
     </div>
   </div>
